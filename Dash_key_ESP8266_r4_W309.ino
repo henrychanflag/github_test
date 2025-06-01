@@ -43,8 +43,8 @@ typedef struct {
 // Replace with your SSID and Password
 //const char *ssid = "EIA-W311MESH";      // Your SSID             
 //const char *password = "42004200";  // Your Wifi password
-const char *ssid = "Belkin.4CD3";      // Your SSID             
-const char *password = "945643BA";  // Your Wifi password
+const char *ssid = "icw308";      // Your SSID             
+const char *password = "icw3081a";  // Your Wifi password
 
 //MQTT setting
 const char *mqtt_server = "ia.ic.polyu.edu.hk"; // MQTT server name
@@ -58,7 +58,7 @@ byte reconnect_count = 0;
 byte led = LED1;
 
 // Replace with your unique IFTTT URL resource
-const char* resource = "/trigger/W008_Button/json/with/key/rAL6rFipAKByHX8PFoBCEaRY1eWVoyOQZP51f4Ll0L";
+const char* resource = "/trigger/W309_button/json/with/key/b2vLX-drrllYvioMpp_iWP";
 
 // Maker Webhooks IFTTT
 const char* server = "maker.ifttt.com";
@@ -117,7 +117,7 @@ void setup() {
   //publish MQTT messages
   //Initalize Json message
   Jsondata["Request"] = "A4 Paper";
-  Jsondata["Room"] = "W008"; 
+  Jsondata["Room"] = "W309"; 
 
   // Packing the JSON message into msg
   serializeJson(Jsondata, Serial);
